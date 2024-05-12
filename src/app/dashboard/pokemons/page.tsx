@@ -1,7 +1,5 @@
-import { PokemonsResponse } from "@/app/pokemons";
-import { SinglePokemon } from "../../pokemons/interfaces/single-pokemon";
-import Image from "next/image";
-import { PokemonGrid } from "@/app/pokemons/components/PokemonGrid";
+import { PokemonsResponse,SinglePokemon, PokemonGrid } from "@/app/pokemons";
+
 
 const getAllPokemons = async (
   limit = 20,
@@ -24,7 +22,7 @@ export default async function PokemonsPage() {
 
   return (
     <div className="flex flex-col">
-      <PokemonGrid  pokemons={ pokemons } />
+      <PokemonGrid pokemons={pokemons} />
     </div>
   );
 }
