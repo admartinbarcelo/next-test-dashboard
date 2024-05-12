@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { HiChartBarSquare, HiCalculator } from "react-icons/hi2";
+import { HiChartBarSquare, HiCalculator, HiBugAnt } from "react-icons/hi2";
 import SidebarMenuItems from "./SidebarMenuItems";
 
 const menuItems = [
@@ -14,7 +14,13 @@ const menuItems = [
     path: "/dashboard/counter",
     icon: <HiCalculator size={40} />,
     title: "Counter",
-    subTitle: "Increment and decrement",
+    subTitle: "Client Side Rendering",
+  },
+  {
+    path: "/dashboard/pokemons",
+    icon: <HiBugAnt size={40} />,
+    title: "Pokemons",
+    subTitle: "Static Side Generation",
   },
 ];
 
