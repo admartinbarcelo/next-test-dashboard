@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { SinglePokemon } from "../interfaces/single-pokemon";
-import { HiHeart } from "react-icons/hi2";
+import { HiOutlineHeart } from "react-icons/hi2";
 
 interface Props {
     pokemon: SinglePokemon
@@ -39,11 +39,12 @@ export default function PokemonCard( { pokemon }: Props) {
           <Link href="/dashboard/main" className="px-4 py-2 hover:bg-gray-100 flex items-center">
 
               <div className="text-red-600">
-                <HiHeart/>
+              <HiOutlineHeart />
+
               </div>
               <div className="pl-3">
                 <p className="text-sm font-medium text-gray-800 leading-none">
-                  No es favorito
+                  Set as favorite
                 </p>
                 <p className="text-xs text-gray-500">View your campaigns</p>
               </div>
