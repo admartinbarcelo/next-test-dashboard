@@ -1,5 +1,4 @@
-import { PokemonsResponse,SinglePokemon, PokemonGrid } from "@/app/pokemons";
-
+import { PokemonsResponse, SinglePokemon, PokemonGrid } from "@/app/pokemons";
 
 const getAllPokemons = async (
   limit = 20,
@@ -13,6 +12,8 @@ const getAllPokemons = async (
     id: pokemon.url.split("/").at(-2)!,
     name: pokemon.name,
   }));
+  // error handling example for the fetch request
+  // throw new Error("Error fetching pokemons");
 
   return pokemons;
 };
