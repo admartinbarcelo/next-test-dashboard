@@ -1,5 +1,5 @@
-import { SinglePokemon } from '../interfaces/single-pokemon';
 import PokemonCard from './PokemonCard';
+import { SinglePokemon } from '../interfaces/single-pokemon';
 
 interface Porps {
     pokemons: SinglePokemon[];

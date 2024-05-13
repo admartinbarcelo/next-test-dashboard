@@ -1,0 +1,1 @@
+export  { CartCounter } from './components-cart/CartCounter';
