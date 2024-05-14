@@ -12,7 +12,7 @@ interface Props {
 
 
 
-export async  function generateMetadataP({params}: Props): Promise<Metadata> {
+export async  function generateMetadata({params}: Props): Promise<Metadata> {
   try{
     const { id, name } = await getPokemon(params.id);
 
