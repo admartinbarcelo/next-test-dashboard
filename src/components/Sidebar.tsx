@@ -56,7 +56,7 @@ export const Sidebar = () => {
       </div>
       <div id="nav" className="w-full px-6">
         {menuItems.map((item) => (
-          <SidebarMenuItems key={item.path} {...item} />
+          <SidebarMenuItems key= { item.path } {...item} />
         ))}
       </div>
     </div>
