@@ -10,6 +10,17 @@ interface Props {
   params: { id: string };
 }
 
+// solo se ejecuta en build time
+export async function generateStaticParams(){
+  // Generar un array de 151 elementos con los ids de los pokemons del 1 al 151
+  const static151Pokemons = Array.from({ length: 151 }, (value, i) => `${i + 1}`);
+  // Retornar un array de objetos con el id de cada pokemon
+  return static151Pokemons.map(id => ({
+    id: id
+  }));
+
+}
+
 
 
 export async  function generateMetadata({params}: Props): Promise<Metadata> {
@@ -17,7 +28,7 @@ export async  function generateMetadata({params}: Props): Promise<Metadata> {
     const { id, name } = await getPokemon(params.id);
 
     return{
-      title: `Pokemon ${name}`,
+      title: `#${id} - ${name}`,
       description: `Información del pokemon ${name}`,
     }
   } catch(error){
