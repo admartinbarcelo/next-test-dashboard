@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { HiChartBarSquare, HiCalculator, HiBugAnt } from "react-icons/hi2";
+import { HiChartBarSquare, HiCalculator, HiBugAnt, HiOutlineHeart } from "react-icons/hi2";
 import SidebarMenuItems from "./SidebarMenuItems";
 
 const menuItems = [
@@ -21,6 +21,12 @@ const menuItems = [
     icon: <HiBugAnt size={40} />,
     title: "Pokemons",
     subTitle: "Static Side Generation",
+  },
+  {
+    path: "/dashboard/favorites",
+    icon: <HiOutlineHeart size={40} />,
+    title: "Favorites",
+    subTitle: "Global State Management",
   },
 ];
 

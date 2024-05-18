@@ -1,7 +1,15 @@
+import { SimpleWidget } from "@/components";
 
 
 export default function Mainpage() {
   return (
-    <div>Hello Main Page</div>
+    <div className="text-black">
+      <h1 className="text-4xl font-bold">Dashboard</h1>
+      <p className="text-lg mt-4">Manage your actions and activities</p>
+
+      <div className="flex flex-wrap p-2">
+        <SimpleWidget />
+      </div>
+    </div>
   )
 }
