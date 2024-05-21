@@ -1,7 +1,12 @@
 import Image from "next/image";
 
-import { HiChartBarSquare, HiCalculator, HiBugAnt, HiOutlineHeart } from "react-icons/hi2";
-import SidebarMenuItems from "./SidebarMenuItems";
+import {
+  HiChartBarSquare,
+  HiCalculator,
+  HiBugAnt,
+  HiOutlineHeart,
+} from "react-icons/hi2";
+import { SidebarMenuItems } from "./SidebarMenuItems";
 
 const menuItems = [
   {
@@ -62,7 +67,7 @@ export const Sidebar = () => {
       </div>
       <div id="nav" className="w-full px-6">
         {menuItems.map((item) => (
-          <SidebarMenuItems key= { item.path } {...item} />
+          <SidebarMenuItems key={item.path} {...item} />
         ))}
       </div>
     </div>
