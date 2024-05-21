@@ -2,7 +2,7 @@
 
 
 import { SimpleWidget } from "./SimpleWidget"
-import { HiOutlineHeart } from "react-icons/hi2"
+import { HiOutlineChartBar, HiOutlineHeart } from "react-icons/hi2"
 import { useAppSelector } from "@/store";
 
 
@@ -15,7 +15,7 @@ export const WidgetsGrid = () => {
             title={`${inCart}`}
             subTitle="Total Products"
             label="counter"
-            icon={<HiOutlineHeart size={ 70 } className="text-blue-600" />}
+            icon={<HiOutlineChartBar size={ 70 } className="text-blue-600" />}
             href="/dashboard/counter"
         />
       </div>
