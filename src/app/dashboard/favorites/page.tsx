@@ -1,4 +1,4 @@
-import { PokemonGrid } from "@/pokemons";
+import { FavoritePokemons, PokemonGrid } from "@/pokemons";
 
 
 export const metadata = {
@@ -7,14 +7,11 @@ export const metadata = {
     };
 
 
-
-
 export default async function FavoritesPage() {
-
 
   return (
     <div className="flex flex-col">
-      <PokemonGrid pokemons={ [] } />
+      <FavoritePokemons />
     </div>
   );
 }
