@@ -2,7 +2,7 @@
 
 
 import { SimpleWidget } from "./SimpleWidget"
-import { HiOutlineChartBar, HiOutlineHeart } from "react-icons/hi2"
+import { HiOutlineChartBar } from "react-icons/hi2"
 import { useAppSelector } from "@/store";
 
 
