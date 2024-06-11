@@ -6,7 +6,7 @@ interface FavoritesPokemonsState {
 }
 
 const initialState: FavoritesPokemonsState = {
-  '1': { id: '1', name: 'bulbasaur' }
+
 
 }
 
